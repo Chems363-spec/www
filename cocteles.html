@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+    body { background-color: black;  }
+    .card-img-top {
+        transition: transform 0.3s ease;
+    }
+    .card:hover .card-img-top {
+        transform: scale(1.1);
+    }
+    .description {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .card:hover .description {
+        display: block;
+    }
+    .card {
+        position: relative;
+        overflow: hidden;
+    }
+    </style>
+</head>
+<body>
+
+<!-- navbar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+        <img src="img/logo.jpg" alt="Logo" height="70">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="micheladas.html">MICHELADAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="cocteles.html">COCTELES </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="frapes.html">FRAPES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="snacks.html">SNACKS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ubicacion.html">UBICACION</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>   
+
+<!--tarjeta-->
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="col border-0 text-center card">
+          <img src="img/laguna azul.jpg" class="card-img-top" alt="...">
+          <div class="card-body bg-white">
+            <h5 class="card-title">L A G U A N A A Z U L</h5>
+            <h5 class="card-title">$80  </h5>
+          </div>
+          <div class="description">
+            <p>Una bedida que combina lo lunce con lo amargo contiene vodka.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="col border-0 text-center card">
+          <img src="img/azulito.jpg" class="card-img-top" alt="...">
+          <div class="card-body bg-white">
+            <h5 class="card-title">A Z U L I T O</h5>
+            <h5 class="card-title">$80 </h5>
+          </div>
+          <div class="description">
+            <p>Una bebida con sabor dulce a mora azul contiene vodka .</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="col border-0 text-center card">
+          <img src="img/ultravioleta.jpg" class="card-img-top" alt="...">
+          <div class="card-body bg-white">
+            <h5 class="card-title">U L T R A V I O L E T A </h5>
+            <h5 class="card-title">$100 </h5>
+          </div>
+          <div class="description">
+            <p>Una bebida con un sabor a fresas con moras contiene vodka .</p>
+          </div>
+        </div>
+      </div>   
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="col border-0 text-center card">
+          <img src="img/vockarindo.jpg" class="card-img-top" alt="...">
+          <div class="card-body bg-white">
+            <h5 class="card-title">V O C K A R I N D O </h5>
+            <h5 class="card-title">$100 </h5>
+          </div>
+          <div class="description">
+            <p>Una bebida con un fuerte sabor a tamarindo y a vodka .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!--tarjeta-->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-3">
+      <div class="col border-0 text-center card">
+        <img src="img/MANGO.jpg" class="card-img-top" alt="...">
+        <div class="card-body bg-white">
+          <h5 class="card-title">M O J I T O M A N G O </h5>
+          <h5 class="card-title">$90  </h5>
+        </div>
+        <div class="description">
+          <p>Una bebida muy dulce una combianacion perfecta entre el mango y el tequila.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-3">
+      <div class="col border-0 text-center card">
+        <img src="img/MANZANA VERDE.jpg" class="card-img-top" alt="...">
+        <div class="card-body bg-white">
+          <h5 class="card-title">M O J I T O S K K Y </h5>
+          <h5 class="card-title">$100 </h5>
+        </div>
+        <div class="description">
+          <p>Un mojito una convinacion con el skyy de manzana muy buen combianacion.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-3">
+      <div class="col border-0 text-center card">
+        <img src="img/COTEL FRESA.jpg" class="card-img-top" alt="...">
+        <div class="card-body bg-white">
+          <h5 class="card-title">M O J I T O F R E S A </h5>
+          <h5 class="card-title">$90 </h5>
+        </div>
+        <div class="description">
+          <p>Mojito con un sabor a fresa un poco citrico contiene tequila  .</p>
+        </div>
+      </div>
+    </div>   
+    <div class="col-sm-6 col-md-6 col-lg-3">
+      <div class="col border-0 text-center card">
+        <img src="img/MOJITOYERBABUENA.jpg" class="card-img-top" alt="...">
+        <div class="card-body bg-white">
+          <h5 class="card-title">MOJITO YERBA BUENA  </h5>
+          <h5 class="card-title">$90 </h5>
+        </div>
+        <div class="description">
+          <p>Mojito con un rico sabor similar a una paloma ya que esta bebida contiene tequila .</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--pie de pagina -->
+<footer class="bg-dark text-white pt-4 mt-5">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-3">
+                <h5 class="text-center">CENTRO BOTANERO EL PADRINO </h5>
+                <p class="text-center">No somos un simple antojo somos una adiccion .</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5 class="text-center">CONTACTO </h5>
+                <ul class="list-unstyled text-center">
+                    <li><a href="https://www.facebook.com/share/19tHqjTBm1/" class="text-white text-decoration-none" target="_blank">
+                        <i class="bi bi-facebook"> </i></a></li>
+                    <li><a href="https://www.instagram.com/pablovillanueva308?utm_source=qr&igsh=ZHRoaXE4ZTZwMnJk" class="text-white text-decoration-none" target="_blank">
+                        <i class="bi bi-instagram"> </i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center py-3 bg-secondary">
+        &copy; 2025 Todos los derechos reservados
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

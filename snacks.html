@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        /* Estilo para el contenedor de la tarjeta */
+        .card-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Animación para la imagen al pasar el mouse */
+        .card-img-top {
+            transition: transform 0.3s ease;
+        }
+
+        /* Aumentar el tamaño de la imagen cuando el mouse pasa sobre la tarjeta */
+        .card-container:hover .card-img-top {
+            transform: scale(1.1);
+        }
+
+        /* Descripción que aparece al pasar el mouse */
+        .description {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            visibility: hidden; /* Está oculta por defecto */
+            opacity: 0;
+            transition: opacity 0.3s, visibility 0.3s; /* Transición suave */
+        }
+
+        /* Mostrar la descripción cuando el mouse está sobre la imagen */
+        .card-container:hover .description {
+            visibility: visible;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- navbar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+        <img src="img/logo.jpg" alt="Logo" height="70">
+    </a> 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="micheladas.html">MICHELADAS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="cocteles.html">COCTELES </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="frapes.html">FRAPES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="snacks.html">SNACKS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ubicacion.html">UBICACION</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>   
+
+<!--tarjeta-->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="col border-0 text-center card-container">
+                <img src="img/alitas bbq.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-white">
+                    <h5 class="card-title">A L I T A S B B Q</h5>
+                    <h5 class="card-title">$80</h5>
+                </div>
+                <div class="description">
+                    <p>Alitas con una cubierta de salsa bbq.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="col border-0 text-center card-container">
+                <img src="img/alitas mango.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-white">
+                    <h5 class="card-title">A L I T A S M A N G O </h5>
+                    <h5 class="card-title">$80</h5>
+                </div>
+                <div class="description">
+                    <p>Alitas con una cubierta de salsa mango habanero.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="col border-0 text-center card-container">
+                <img src="img/dedos de queso.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-white">
+                    <h5 class="card-title">DEDOS DE QUESO</h5>
+                    <h5 class="card-title">$70</h5>
+                </div>
+                <div class="description">
+                    <p>Queso empanizado acompañada de una salsa .</p>
+                </div>
+            </div>
+        </div>   
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="col border-0 text-center card-container">
+                <img src="img/choripapas.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-white">
+                    <h5 class="card-title">CHORIPAPAS</h5>
+                    <h5 class="card-title">$80</h5>
+                </div>
+                <div class="description">
+                    <p>Papas fritas con una cubierta de chorizo frito.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--tarjeta-->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="col border-0 text-center card-container">
+                <img src="img/nachos.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-white">
+                    <h5 class="card-title">NANCHOS </h5>
+                    <h5 class="card-title">$110</h5>
+                </div>
+                <div class="description">
+                    <p>Nachos especiales de la casa con carne molida pico de gallo y aguacate. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="col border-0 text-center card-container">
+                <img src="img/pepepapas.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-white">
+                    <h5 class="card-title">PEPEPAPAS</h5>
+                    <h5 class="card-title">$70</h5>
+                </div>
+                <div class="description">
+                    <p>Papas fritas con una cubierta de peperoni.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="col border-0 text-center card-container">
+                <img src="img/papas.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-white">
+                    <h5 class="card-title">PAPAS FRITAS</h5>
+                    <h5 class="card-title">$50</h5>
+                </div>
+                <div class="description">
+                    <p>Papas fritas sasonadas.</p>
+                </div>
+            </div>
+        </div>   
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="col border-0 text-center card-container">
+                <img src="img/salchipapas.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-white">
+                    <h5 class="card-title">SALCHIPAPAS</h5>
+                    <h5 class="card-title">$60</h5>
+                </div>
+                <div class="description">
+                    <p>Papas fritas con salchichas fritas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--pie de pagina -->
+<footer class="bg-dark text-white pt-4 mt-5">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-3">
+                <h5 class="text-center">CENTRO BOTANERO EL PADRINO </h5>
+                <p class="text-center">No somos un simple antojo, somos una adicción.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5 class="text-center">CONTACTO </h5>
+                <ul class="list-unstyled text-center">
+                    <li><a href="https://www.facebook.com/share/19tHqjTBm1/" class="text-white text-decoration-none" target="_blank">
+                        <i class="bi bi-facebook"> </i></a></li>
+                    <li><a href="https://www.instagram.com/pablovillanueva308?utm_source=qr&igsh=ZHRoaXE4ZTZwMnJk" class="text-white text-decoration-none" target="_blank">
+                        <i class="bi bi-instagram"> </i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center py-3 bg-secondary">
+        &copy; 2025 Todos los derechos reservados
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
